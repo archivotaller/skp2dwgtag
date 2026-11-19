@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skp2dwg"
+version = "0.1.0"
+description = "Exporta vistas 2D de SketchUp a DWG conservando las etiquetas como capas"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["ezdxf>=1.3", "PyYAML>=6", "pywinauto>=0.6.9"]
+
+[project.scripts]
+skp2dwg = "skp2dwg.cli:main"
+skp2dwg-gui = "skp2dwg.gui:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

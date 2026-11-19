@@ -1,0 +1,22 @@
+# Overrides opcionales de capas.
+# Las etiquetas no listadas usan su nombre, color y visibilidad de SketchUp.
+
+defaults:
+  lineweight: 25        # centésimas de mm (0.25 mm)
+
+layers:
+  # Ejemplo: renombrar y recolorear una etiqueta
+  "muros":
+    name: "ARQ_MUROS"
+    color: [200, 30, 30]
+    lineweight: 35
+
+  # Ejemplo: forzar que una capa nazca congelada
+  # "cajon":
+  #   hidden: true
+
+fallback:
+  unmatched: "SIN_ETIQUETA"
+  section: "CORTE"
+  profile: "PERFIL"
+  text: "TEXTO"

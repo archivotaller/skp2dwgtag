@@ -1,0 +1,24 @@
+# Definición de vistas para skp2dwg.
+# Si no se pasa --views, se generan automáticamente.
+views:
+  - name: PLANTA
+    kind: top
+
+  - name: ELEV_FRONTAL
+    kind: front
+
+  - name: ELEV_POSTERIOR
+    kind: back
+
+  - name: ELEV_DERECHA
+    kind: right
+
+  - name: ELEV_IZQUIERDA
+    kind: left
+
+  # Una vista por cada plano de sección del modelo.
+  # El nombre debe coincidir exactamente con el de SketchUp.
+  - name: CORTE_AA
+    kind: section
+    plane: "Sección 9"
+    flip: false
