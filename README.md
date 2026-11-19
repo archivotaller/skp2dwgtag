@@ -15,6 +15,11 @@ Exporta **vistas 2D de SketchUp a DWG** conservando las **etiquetas (tags) como 
 
 La aplicación no usa OpenCode para nada: habla directo con el plugin en `127.0.0.1:9876` y con `accoreconsole`.
 
+### Descarga
+
+- Última versión: <https://github.com/archivotaller/skp2dwgtag/releases/latest>
+- Windows x64: `skp2dwg.exe` (no requiere Python).
+
 Diagnóstico sin abrir la interfaz:
 
 ```powershell
